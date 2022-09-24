@@ -1,0 +1,267 @@
+@charset "UTF-8";
+
+html {
+  font-size: 100%;
+}
+body {
+  font-family: "Arial", "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Meiryo", sans-serif;
+  font-size: 0.875rem;
+  color: #2a2a2a;
+  line-height: 40px;
+}
+a {
+  text-decoration: none;
+}
+a:hover {
+  opacity: 0.7;
+}
+img {
+  max-width: 100%;
+  padding-top: 30px;
+}
+li {
+  list-style: none;
+}
+
+.wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 5%;
+}
+.sec-title{
+  font-size: 1.5rem;
+  margin: 20px 0;
+}
+.wrapper>p {
+  font-size: 1rem;
+}
+
+/* ボタン */
+.btn {
+  color: #2a2a2a;
+  border: solid 1px #2a2a2a;
+  display: inline-block;
+  font-size: 0.750rem;
+  padding: 14px 36px;
+  margin-top: 30px;
+}
+
+/*-------------------------------------------
+ヘッダー
+-------------------------------------------*/
+
+#header {
+  height: 100%;
+  width: 100%;
+  background-image: url(../img/sample1\ main.png);
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
+  margin-bottom: 80px;
+  position: relative;
+}
+
+/* タイトル */
+#header .site-title { 
+  font-size: 50px;
+  text-align: center;
+  font-family: serif;
+  margin: 30px 0;
+  color: rgb(84, 82, 82);
+  background-color: #fff;
+}
+
+/*-------------------------------------------
+Select
+-------------------------------------------*/
+#select {
+  text-align: center;
+  margin-bottom: 80px;
+  font-weight: bold;
+  color: #7b7b7b;
+}
+
+#select h2 {
+  color: #7b7b7b;
+  border-bottom: 2px solid #7b7b7b;
+  display: inline-block;
+}
+
+#select img {
+  height: 350px;
+  width: 450px;
+}
+#select br{
+  padding-bottom: 20px;
+}
+#select .flex-item {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+
+#select .flex-item .item {
+  width: 49%;
+  position: relative;
+}
+
+#select .flex-item .item .text {
+  max-width: 290px;
+  color: #fff;
+  font-weight: bold;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 15px 0;
+  margin: 0 auto;
+  position: absolute;
+  top: 40%;
+  left: 0;
+  right: 0;
+}
+#select .flex-item .item .title {
+  font-size: 1.25rem;
+  margin-bottom: 2px;
+}
+
+/*-------------------------------------------
+Access Visual
+-------------------------------------------*/
+#access {
+  height: 300px;
+  background-position: center top;
+  background-repeat: no-repeat;
+  text-align: center;
+  padding-top: 60px;
+  color: #7b7b7b;
+}
+
+#access a {
+  color: #7b7b7b;
+  font-size: 30px;
+}
+
+/* menu */
+#menu,#visual {
+  text-align: center;
+  margin-bottom: 80px; 
+  color: #7b7b7b;
+}
+
+#menu .box {
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: 15px;
+}
+
+#menu .box dl {
+  padding-bottom: 15px;
+}
+#menu .box dt {
+  font-weight: bold;
+  border-bottom: 1px solid #7b7b7b;
+}
+
+#visual .wrapper .container {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 auto;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 100px;
+}
+#visual .wrapper .container img{
+  width: 400px;
+  height: 250px;
+  padding: 10px;
+} 
+
+
+/*-------------------------------------------
+フッター
+-------------------------------------------*/
+#footer {
+  background-color: #333;
+  font-size: 0.750rem;
+}
+#footer .flex-item {
+  display: flex;
+  justify-content: space-evenly;
+  color: #fff;
+}
+#footer .item {
+  width: 33%;
+  line-height: 2;
+
+  padding: 60px 0;
+}
+#footer .item li::before {
+  margin-right: 5px;
+}
+#footer .item .title {
+  font-size: 1rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+#footer .copyright {
+  font-size: 0.8rem;
+  background-color: #fff;
+  text-align: center;
+  padding: 10px 0;
+}
+
+/*-------------------------------------------
+SP
+-------------------------------------------*/
+@media screen and (max-width: 896px) {
+  #header .site-title {
+    font-size: 25px;
+  }
+
+  .wrapper>p {
+    font-size: 15px;
+  }
+  /*-------------------------------------------
+  Select
+  -------------------------------------------*/
+  section #select .warapper {
+    font-size: 0.5rem;
+  }
+  #select .flex-item {
+    flex-direction: column;
+  }
+  #select .flex-item .item {
+    width: 100%;
+  }
+  #select .flex-item .item:first-child {
+    margin-bottom: 30px;
+  }
+  #select img {
+    height: auto;
+  }
+
+  /*-------------------------------------------
+   Access
+  -------------------------------------------*/
+  #access {
+    padding-top: 35px;
+    margin-bottom: 50px;
+    height: 200px;
+  }
+
+
+  /*-------------------------------------------
+  フッター
+  -------------------------------------------*/
+  #footer .flex-item {
+    display: flex;
+    /* flex-wrap: wrap; */
+    padding:0;
+  }
+  #footer .item {
+    width: 49%; 
+    margin-bottom: 30px; 
+    text-align: center;
+  }
+ 
+  #footer p.title {
+    padding-top: 10px;
+  }
