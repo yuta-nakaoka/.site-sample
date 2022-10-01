@@ -253,17 +253,15 @@ SP
   -------------------------------------------*/
   #footer .flex-item {
     display: flex;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     padding:0;
   }
   #footer .item {
     width: 49%; 
     margin-bottom: 30px; 
-  }
-  #footer .item:first-child {
     text-align: center;
-    padding: 0;
-  } 
+  }
+ 
   #footer p.title {
     padding-top: 10px;
   }
